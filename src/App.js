@@ -49,20 +49,25 @@ function App() {
         <section className="App-images-container">
           <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwJSGeOvxq0VutuW01HbrBr7xmzjVG9WpfZsYLzwK6L7SKWyHmj5s4Gl0DPiBHUoQB-4&usqp=CAU" alt="product 1"/>
           <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNAv9eJOHtIyT3FhMqI4VKTrmVHuy5FA2pMg&usqp=CAU" alt="product 2"/>
-          <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwJSGeOvxq0VutuW01HbrBr7xmzjVG9WpfZsYLzwK6L7SKWyHmj5s4Gl0DPiBHUoQB-4&usqp=CAU" alt="product 3"/>
-          <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwJSGeOvxq0VutuW01HbrBr7xmzjVG9WpfZsYLzwK6L7SKWyHmj5s4Gl0DPiBHUoQB-4&usqp=CAU" alt="product 4"/>
+          <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1uXJ46xQ-kL_HJ9imeTbR6QJlomNOMI-AjTJP3qEcC4tjlCfl9SIu0ex5r7B3fFvP39I&usqp=CAU" alt="product 3"/>
+          <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjaTe-32n0Cj67-V8aG8djwOmmrnVLeDvLwA&usqp=CAU" alt="product 4"/>
           <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNAv9eJOHtIyT3FhMqI4VKTrmVHuy5FA2pMg&usqp=CAU" alt="product 5"/>
         </section>
         <section className="App-contact-us">
-          <p>Contact Us!</p>
-          <label>
-            Email:
+          <h2>Contact Us!</h2>
+          <label className="App-input-label">
+            Name:
             <input type="text" />
           </label>
-          <label>
-            Type your message:
-            <textarea />
+          <label className="App-input-label">
+            Email:
+            <input type="email" />
           </label>
+          <label className="App-input-label">
+            Type your message:
+            <textarea rows='10'/>
+          </label>
+          <button className="App-send-button">SEND</button>
         </section>
       </main>
     </div>
