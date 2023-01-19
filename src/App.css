@@ -48,7 +48,7 @@ body {
 
 .App-hero {
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7c12S1bjSUEimoXDori8F4PWbbz-LCZ-7qQ&usqp=CAU');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7c12S1bjSUEimoXDori8F4PWbbz-LCZ-7qQ&usqp=CAU');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,6 +70,7 @@ body {
   background-color: #ffffff;
   color: #0563AB;
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .App-images-container {
