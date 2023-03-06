@@ -1,27 +1,41 @@
 import "./App.css";
+import logo from "./images/icononly_transparent_nobuffer.png";
+// import title from "./images/textonly_nobuffer.png";
+import amazonLogo from "./images/amazon-logo-svgrepo-com.svg";
+import igLogo from "./images/instagram-logo-facebook-2-svgrepo-com.svg";
+import fullLogo from "./images/fulllogo.jpg";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://i.pinimg.com/564x/cc/45/f4/cc45f4812a8aa83b6aa40c35417aa8ee.jpg" alt="logo" />
-        <h1>
-          Buffalo Imports
-        </h1>
+        <img className="App-logo" src={ logo } alt="logo" />
+        {/* <img className="App-Title" src={ title } alt="logo" /> */}
         <nav>
           <ul className="App-nav-links">
             <li>Home</li>|
             <li>Wholesale</li>|
             <li>Contact</li>
+            <li>
+              <a href="https://www.instagram.com/buffaloimportsusa/" target="_blank">
+                <img src={igLogo} alt="Instagram-Link" className="App-header-icon"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.amazon.com/buffaloimportsusa/" target="_blank">
+                <img src={amazonLogo} alt="Amazon-Link" className="App-header-icon"/>
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
       <main>
         <section className="App-hero">
-          <p>WELCOME TO BUFFALO IMPORTS</p>
-          <p className="App-redirect-button" >CLICK HERE TO REDIRECT TO OUR AMAZON PAGE</p>
+          {/* <p>WELCOME TO BUFFALO IMPORTS</p>
+          <p className="App-redirect-button" >CLICK HERE TO REDIRECT TO OUR AMAZON PAGE</p> */}
+          <img src={fullLogo} alt="Logo" className="App-hero-img"/>
         </section>
-        <section className="App-article">
+        {/* <section className="App-article">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
             molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -45,7 +59,7 @@ function App() {
             totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
             quasi aliquam eligendi, placeat qui corporis!
           </p>
-        </section>
+        </section> */}
         <section className="App-images-container">
           <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwJSGeOvxq0VutuW01HbrBr7xmzjVG9WpfZsYLzwK6L7SKWyHmj5s4Gl0DPiBHUoQB-4&usqp=CAU" alt="product 1"/>
           <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNAv9eJOHtIyT3FhMqI4VKTrmVHuy5FA2pMg&usqp=CAU" alt="product 2"/>
@@ -53,22 +67,23 @@ function App() {
           <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjaTe-32n0Cj67-V8aG8djwOmmrnVLeDvLwA&usqp=CAU" alt="product 4"/>
           <img className= "App-product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNAv9eJOHtIyT3FhMqI4VKTrmVHuy5FA2pMg&usqp=CAU" alt="product 5"/>
         </section>
-        <section className="App-contact-us">
+        <form className="App-contact-us" action="mailto:someone@example.com" method="post" enctype="text/plain">
           <h2>Contact Us!</h2>
           <label className="App-input-label">
             Name:
-            <input type="text" />
+            <input type="text" name="name" />
           </label>
           <label className="App-input-label">
             Email:
-            <input type="email" />
+            <input type="email" name="email" />
           </label>
           <label className="App-input-label">
             Type your message:
-            <textarea rows='10'/>
+            <textarea rows='10' name="message" />
           </label>
-          <button className="App-send-button">SEND</button>
-        </section>
+          <input className="App-send-button" type="submit" value="Send" />
+          {/* <input className="App-send-button" type="reset" value="Reset" /> */}
+        </form>
       </main>
     </div>
   );
